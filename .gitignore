@@ -4,3 +4,6 @@ lib
 lib/*.so
 .*.swp
 */.*.swp
+*.dot
+examples/*.dot
+bin/*.dot

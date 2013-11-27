@@ -4,6 +4,12 @@ To build, cd into the src directory and modify the variables in the compile.sh s
 
 After building, you will also need to modify the bin/STATview and bin/core_stack_merge scripts, modifying _prefix to point to the directory where you installed this utility.
 
-To run, invoke the bin/core_stack_merge script, which will print usage instructions.  The resulting .dot files can be viewed with bin/stat-view.
+To run, invoke the bin/core_stack_merge script, which will print usage instructions.  An example executable and core files can be found in the examples directory and can be merge with the following command:
+
+./bin/core_stack_merge -x examples/virtual_ring_mpi -c examples/core.*
+
+The resulting .dot files can be viewed with:
+
+./bin/stat-view *.dot
 
 For any questions, contact Greg Lee <lee218@llnl.gov>.

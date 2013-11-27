@@ -1,5 +1,4 @@
 #!/bin/sh
-set -x
 
 _prefix=/nfs/tmp2/lee218/deleteme/core_stack_merge-2.3
 
