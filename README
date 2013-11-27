@@ -4,4 +4,6 @@ To build, cd into the src directory and modify the variables in the compile.sh s
 
 After building, you will also need to modify the bin/STATview and bin/core_stack_merge scripts, modifying _prefix to point to the directory where you installed this utility.
 
+To run, invoke the bin/core_stack_merge script, which will print usage instructions.  The resulting .dot files can be viewed with bin/stat-view.
+
 For any questions, contact Greg Lee <lee218@llnl.gov>.
