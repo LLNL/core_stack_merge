@@ -15,6 +15,8 @@ STACKWALKERPREFIX=/nfs/tmp2/lee218/deleteme/stat-bgq
 # set this to the STAT source code directory
 STATSRCDIR=/nfs/tmp2/lee218/deleteme/tmp/6-STAT
 
+mkdir -p ../lib
+
 $CXX -c -O0 -g  -fPIC STAT_GraphRoutines.C -I$GRAPHLIBPREFIX/include -I./ -I$STATSRCDIR -DSTAT_NO_STAT_H
 $CXX -c -O0 -g  -fPIC -I$PYTHONINCLUDE -I$GRAPHLIBPREFIX/include -o STAT_merge.o STAT_merge.C -I$STATSRCDIR -DSTAT_NO_STAT_H
 $CXX -shared -o ../lib/_STATmerge.so STAT_merge.o STAT_GraphRoutines.o -L$GRAPHLIBPREFIX/lib -Wl,-rpath=$GRAPHLIBPREFIX/lib -llnlgraph
